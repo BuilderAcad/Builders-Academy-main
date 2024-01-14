@@ -522,8 +522,6 @@
   box-shadow: 0 18.4px 38.25px rgba(0, 0, 0, 0.15);
   border: 0.8px solid var(--color-mediumslateblue-100);
   box-sizing: border-box;
-  width: 130.3px;
-  height: 163.1px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -561,8 +559,6 @@
   box-shadow: 0 18.4px 38.25px rgba(0, 0, 0, 0.15);
   border: 0.8px solid var(--color-mediumslateblue-100);
   box-sizing: border-box;
-  width: 192.9px;
-  height: 78.3px;
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
@@ -596,8 +592,6 @@
   box-shadow: 0 18.4px 38.25px rgba(0, 0, 0, 0.15);
   border: 0.8px solid var(--color-mediumslateblue-100);
   box-sizing: border-box;
-  width: 148.5px;
-  height: 73.9px;
   flex-direction: row;
   padding: 18.360000610351562px;
   gap: 12.24px;
@@ -882,13 +876,6 @@
   letter-spacing: 0.02em;
   line-height: 150%;
 }
-.frame-parent3 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: var(--gap-xl);
-}
 .lessons-on-design {
   align-self: stretch;
   position: relative;
@@ -898,8 +885,6 @@
 .frame-parent2 {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
   gap: var(--gap-11xl);
 }
 .learn-more {
@@ -907,14 +892,17 @@
   letter-spacing: 0.02em;
   line-height: 140%;
   font-weight: 500;
+  color: var(--color-mediumslateblue-100);
 }
 .vector-icon16 {
   position: relative;
-  width: 5px;
+  width: 20px;
   height: 10px;
 }
 .learn-more-parent {
+  margin-top: auto;
   display: flex;
+  width: 100%;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
@@ -927,15 +915,13 @@
   line-height: 24px;
   font-weight: 500;
 }
-.frame-parent1,
 .free-wrapper {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-}
-.free-wrapper {
+  margin-left: auto;
   border-radius: var(--br-10xs);
   background-color: var(--color-gainsboro-100);
   width: 31px;
@@ -945,15 +931,6 @@
   padding: 0 var(--padding-5xs);
   font-size: var(--font-size-xs);
   color: var(--color-black);
-}
-.frame-parent1 {
-  border-radius: var(--br-xs);
-  background-color: var(--color-mediumslateblue-100);
-  box-shadow: 0 67.1px 109.06px rgba(0, 0, 0, 0.05);
-  width: 373px;
-  flex-wrap: wrap;
-  padding: var(--padding-11xl) var(--padding-21xl);
-  gap: 100px;
 }
 .icon3 {
   position: relative;
@@ -1000,51 +977,39 @@
   justify-content: center;
 }
 .frame-parent4 {
+  /* align-items: stretch; */
   border-radius: var(--br-xs);
   background-color: var(--color-white);
   box-shadow: 0 67.1px 109.06px rgba(0, 0, 0, 0.05);
   border: 1px solid var(--color-gainsboro-200);
   flex-direction: column;
-  align-items: flex-start;
+  /* align-items: flex-start; */
   padding: var(--padding-11xl) 22px;
   gap: 13px;
   color: var(--color-gray-100);
+  flex-wrap: wrap;
 }
+
+.frame-parent4:hover{
+  color: white;
+  border-radius: var(--br-xs);
+  background-color: var(--color-mediumslateblue-100);
+  box-shadow: 0 67.1px 109.06px rgba(0, 0, 0, 0.05);
+}
+
+.frame-parent4:hover .classes-in-development, 
+.frame-parent4:hover .learn-more,
+.frame-parent4:hover .vector-icon-16{
+  color: white;
+}
+
 .frame-div {
   flex-direction: row;
   align-items: center;
   gap: var(--gap-21xl);
 }
-.classes-in-development1 {
-  position: relative;
-  font-size: var(--text-lg-medium-size);
-  line-height: 180%;
-  color: var(--color-dimgray);
-  display: inline-block;
-  width: 309px;
-}
-.learn-more-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  gap: var(--gap-2xl);
-  text-align: center;
-  font-size: var(--text-lg-medium-size);
-  color: var(--color-mediumslateblue-100);
-}
-.frame-parent8 {
-  border-radius: var(--br-xs);
-  background-color: var(--color-white);
-  box-shadow: 0 67.1px 109.06px rgba(0, 0, 0, 0.05);
-  border: 1px solid var(--color-gainsboro-200);
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  padding: var(--padding-11xl) var(--padding-5xl);
-  gap: var(--gap-3xl);
-}
+
+
 .icon5 {
   position: relative;
   width: 25.7px;
@@ -1106,6 +1071,7 @@
 .frame-container {
   flex-direction: row;
   text-align: left;
+  align-items: stretch;
   font-size: var(--font-size-5xl);
   color: var(--color-white);
 }
