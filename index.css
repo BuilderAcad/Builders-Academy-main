@@ -1428,10 +1428,54 @@
 }
 @media screen and (max-width: 960px) {
 
-  .frame-mobile-1698,
-  .mainimage {
+  .frame-mobile-1698 {
     display: none;
   }
+
+  .frame-group{
+    align-items: normal;
+  }
+  .mainimage-child{
+    top : 140px
+  }
+  .group-parent{
+    width:auto;
+    height: 400px;
+  
+  }
+.frame-child{
+  width: 400px;
+  height:400px;
+}
+
+.goal1-parent{
+  width: auto;
+}
+.vector-icon1,.vector-icon2{
+  width: 100px;
+  height: 30px;
+}
+.collaboration-item{
+  display: none;
+}
+.mainsection{
+  font-size: 50px;
+}
+.main-description{
+  height: auto;
+}
+.main-description-parent{
+  height: auto;
+}
+.maintheme{
+  height: auto;
+}
+.maintheme-wrapper{
+  width: 500px;
+}
+.button-parent{
+  top: 250px;
+}
 
   .frame-div{
     flex-direction: row;
