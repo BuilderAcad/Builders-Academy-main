@@ -2,12 +2,36 @@
   box-sizing:border-box;
   font-family: var(--text-md-normal);
 }
+html::-webkit-scrollbar{
+  width: 6px;
+}
+html::-webkit-scrollbar-track{
+  background-color: rgba(0, 0, 0, 0);
+}
+html::-webkit-scrollbar-thumb{
+  border-radius: 20px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+html{
+  scrollbar-color: black;
+  scrollbar-width: thin;
+}
 .container{
   max-width: 1600px;
   padding: 15px;
 }
 .fluid{
   width: 100%;
+}
+.home-work {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  gap: 17px;
+  text-align: center;
+  font-size: var(--text-md-normal-size);
+  color: var(--color-black);
 }
 .header {
   align-self: stretch;
@@ -775,9 +799,11 @@
   stroke:#7F56D9;
 }
 .free {
-  position: relative;
+  padding: 10px;
   line-height: 24px;
   font-weight: 500;
+  color: white;
+  text-decoration: none;
 }
 .free-wrapper {
   display: flex;
@@ -1289,11 +1315,26 @@
   align-items: flex-start;
   justify-content: flex-start;
 }
+.content6,
+.logo-and-supporting-text-parent,
+.section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 .links,
 .logo-and-supporting-text {
+  flex: 0 0 50%;
+  max-width: 50%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.logo-and-supporting-text-parent{
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: var(--padding-mid) var(--padding-6xl);
 }
 .logo-and-supporting-text {
   height: 206px;
@@ -1303,26 +1344,12 @@
   flex-direction: column;
   text-align: left;
 }
-.logo-and-supporting-text-parent {
-  width: 1605px;
-  justify-content: space-between;
-  padding: var(--padding-mid) var(--padding-6xl);
-}
-.content6,
-.logo-and-supporting-text-parent,
-.section {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
 .content6 {
   align-self: stretch;
   width: 691px;
   justify-content: center;
 }
 .section {
-  width: 1669px;
-  height: 90px;
   justify-content: space-between;
   padding: 20px 489px;
   text-align: left;
@@ -1342,15 +1369,7 @@
   gap: var(--gap-3xs);
   color: var(--color-whitesmoke-300);
 }
-.home-work {
-  position: relative;
-  background-color: var(--color-white);
-  width: 100%;
-  gap: 17px;
-  text-align: center;
-  font-size: var(--text-md-normal-size);
-  color: var(--color-black);
-}
+
 
 @media screen and (max-width: 1200px) {
   .frame-mobile-1698{
@@ -1615,6 +1634,17 @@
     
   }
   .team-member-wrap{
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .links{
+    order: 1;
+  }
+  .logo-and-supporting-text{
+    order: 2;
+  }
+  .links,
+  .logo-and-supporting-text{
     flex: 0 0 100%;
     max-width: 100%;
   }
