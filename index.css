@@ -1508,9 +1508,80 @@ html{
   height: 300px;
   width: 300px;
 }
-.mainimage .div1,.div2,.div{
-  display: none;
+.mainimage{
+  .div1 {
+    position: absolute;
+    top: 1px;
+    left: 25px;
+    gap: 5px;
+    padding: 5px;
+  border-radius: 5px;
+    text-align: left;
+    width: fit-content;
+    
+
+    .icon {
+      position: relative;
+      width: 30px;
+      height: 49px;
+  }
+  .k{
+    font-size: 20px;
+  }
+  .online-courses {
+    font-size: 10px;
+    
 }
+}
+
+}
+.mainimage{
+  .div{
+    top: 0px;
+    left: 320px;
+    border-radius: 5px;
+    padding: 15px;
+    gap: 0px;
+    .progress-circle-icon {
+     
+      width: 50px;
+      height: 50px;
+    }
+      .k{
+        font-size: 20px;
+      }
+      .online-courses {
+        font-size: 10px;
+    }
+  
+  
+  }
+}
+.mainimage{
+  .div2{
+    top: 290px;
+    left: 240px;
+    border-radius: 5px;
+    padding: 10px;
+    gap: 0px;
+    .progress-circle-icon {
+     
+      width: 50px;
+      height: 50px;
+    }
+      .k{
+        font-size: 20px;
+      }
+      .online-courses {
+        font-size: 10px;
+    }
+  
+  
+  }
+}
+/* .mainimage .div1,.div2,.div{
+  display: none;
+} */
 .mainimage-child {
   
   top: 120.1px;
@@ -1535,7 +1606,7 @@ html{
     gap: var(--gap-0);
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 430px) {
   .header{
     padding: 5px;
   }
@@ -1570,6 +1641,9 @@ html{
   }
   .frame-mobile-1698 {
     display: flex;
+    padding: auto;
+    height: auto;
+    margin-bottom: 20px;
   }
   .mainsection {
     width: auto;
@@ -1581,6 +1655,9 @@ html{
     height: auto;
     padding-bottom: 0;
   }
+  .courses{
+    gap: 10px;
+  }
   .frame-container,
   .frame-div{
     flex-direction: column;
@@ -1588,16 +1665,22 @@ html{
   .frame-parent4{
     flex: 0 0 100%;
     max-width: 100%;
+    padding: 5px;
   }
   .blog-post-card-wraper{
     flex: 0 0 100%;
     max-width: 100%;
   }
-  .applytoday{
-    padding: 100px 25px;
+  .links{
+    order: 1;
   }
-  .donateframe{
-    padding: 40px 25px;
+  .logo-and-supporting-text{
+    order: 2;
+  }
+  .links,
+  .logo-and-supporting-text{
+    flex: 0 0 100%;
+    max-width: 100%;
   }
   .button-base2{
     padding: 0px;
@@ -1647,5 +1730,9 @@ html{
   .logo-and-supporting-text{
     flex: 0 0 100%;
     max-width: 100%;
+  }
+ .heading{
+    font-size: 25px;
+    line-height: normal;
   }
 }
