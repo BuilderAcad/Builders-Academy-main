@@ -826,15 +826,33 @@
   align-items: center;
   gap: var(--gap-xl);
 }
+.courses{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-21xl);
+  background-color: var(--color-white);
+  flex-direction: column;
+  color: var(--color-slateblue);
+}
 .classes-in-development {
   position: relative;
   font-size: var(--text-lg-medium-size);
   line-height: 180%;
   color: var(--color-dimgray);
   display: inline-block;
-  width: 311px;
 }
 
+.frame-container {
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  align-items: stretch;
+  font-size: var(--font-size-5xl);
+  color: var(--color-white);
+}
 .frame-div,
 .frame-parent4,
 .learn-more-group {
@@ -842,7 +860,12 @@
   justify-content: center;
 }
 .frame-parent4 {
-  padding: var(--padding-11xl) 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--padding-9xl) 15px;
+  flex: 0 0 25%;
+  max-width: 25%;
 }
 
 .frame-parent4:hover .frame-content-wraper{
@@ -861,6 +884,8 @@
 }
 .frame-content-wraper{
   display: flex;
+  height: 100%;
+  max-width: 350px;
   border-radius: var(--br-xs);
   background-color: var(--color-white);
   box-shadow: 0 67.1px 109.06px rgba(0, 0, 0, 0.05);
@@ -894,27 +919,6 @@
   padding: var(--padding-xs) var(--padding-2xs);
 }
 
-.courses{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: var(--gap-21xl);
-}
-.frame-container {
-  flex-wrap: wrap;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: left;
-  align-items: stretch;
-  font-size: var(--font-size-5xl);
-  color: var(--color-white);
-}
-.courses {
-  background-color: var(--color-white);
-  flex-direction: column;
-  color: var(--color-slateblue);
-}
 .alumni-success-stories {
   position: relative;
   font-weight: 600;
@@ -1304,8 +1308,7 @@
   flex-direction: column;
 }
 .links {
-  width: 724px;
-  flex-direction: row;
+  flex-direction: column;
   text-align: left;
 }
 .logo-and-supporting-text-parent {
@@ -1402,6 +1405,10 @@
   .button-parent{
     top: 250px;
   }
+  .frame-parent4{
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
   .blog-post-card-wraper{
     flex: 0 0 50%;
     max-width: 50%;
@@ -1425,6 +1432,7 @@
   .mainimage {
     display: none;
   }
+
   .frame-div{
     flex-direction: row;
   }
@@ -1441,7 +1449,8 @@
 }
 @media screen and (max-width: 420px) {
   .frame-parent4{
-    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
   }
   .blog-post-card-wraper{
     flex: 0 0 100%;
