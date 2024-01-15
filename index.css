@@ -1,5 +1,13 @@
 *{
+  box-sizing:border-box;
   font-family: var(--text-md-normal);
+}
+.container{
+  max-width: 1600px;
+  padding: 15px;
+}
+.fluid{
+  width: 100%;
 }
 .image-3 {
   cursor: pointer;
@@ -718,13 +726,6 @@
   line-height: 44px;
   color: var(--color-gray-100);
 }
-.heading-and-subheading {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-xs);
-}
 .heading-and-supporting-text {
   display: flex;
   flex-direction: column;
@@ -847,10 +848,7 @@
   justify-content: center;
 }
 .frame-parent4 {
-  border-radius: var(--br-xs);
-  background-color: var(--color-white);
   padding: var(--padding-11xl) 22px;
-  color: var(--color-gray-100);
 }
 
 .frame-parent4:hover .frame-content-wraper{
@@ -942,8 +940,8 @@
 }
 .image-4-icon {
   position: relative;
-  width: 354px;
-  height: 286px;
+  max-width: 100%;
+  /* height: 286px; */
   object-fit: cover;
 }
 .supporting-text,
@@ -1001,7 +999,6 @@
   line-height: 24px;
   color: var(--color-slategray);
 }
-.heading-and-subheading1,
 .heading-and-text {
   display: flex;
   flex-direction: column;
@@ -1012,10 +1009,39 @@
   align-self: stretch;
   gap: var(--gap-xs);
 }
-.heading-and-subheading1 {
-  width: 336px;
+
+
+.alumnisuccess,
+.alumnisuccess-inner {
+  display: flex;
+  align-items: center;
+}
+.alumnisuccess {
+  flex-direction: column;
+  background-color: var(--color-white);
+  justify-content: flex-start;
+  padding: 32px 32px;
+  max-width: 1600px;
+  gap: var(--gap-11xl);
+  text-align: left;
+  font-size: var(--display-md-semibold-size);
+}
+.alumnisuccess-inner {
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: var(--text-sm-semibold-size);
+  color: var(--color-gray-100);
+}
+.blog-post-card-wraper{
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 25%;
+  max-width: 25%;
 }
 .blog-post-card {
+  max-width: 400px;
   border-radius: var(--br-5xs);
   background-color: var(--color-white);
   box-shadow: var(--shadow-lg);
@@ -1025,36 +1051,6 @@
   justify-content: center;
   padding: var(--padding-5xl) var(--padding-mini);
   gap: var(--gap-34xl);
-}
-.blog-post-card-parent,
-.frame-parent14 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: var(--gap-3xs);
-}
-.frame-parent14 {
-  align-self: stretch;
-}
-.alumnisuccess,
-.alumnisuccess-inner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.alumnisuccess-inner {
-  justify-content: center;
-  font-size: var(--text-sm-semibold-size);
-  color: var(--color-gray-100);
-}
-.alumnisuccess {
-  background-color: var(--color-white);
-  justify-content: flex-start;
-  padding: 32px 77px;
-  gap: var(--gap-11xl);
-  text-align: left;
-  font-size: var(--display-md-semibold-size);
 }
 .ready-to-build-container {
   position: relative;
@@ -1079,27 +1075,10 @@
   justify-content: center;
   gap: var(--gap-19xl);
 }
-.apply-today {
-  position: relative;
-  letter-spacing: -0.02em;
-  line-height: 48px;
-}
-.apply-today-wrapper,
 .applytoday {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.apply-today-wrapper {
-  border-radius: var(--br-xl);
-  background-color: var(--color-mediumslateblue-100);
-  flex-direction: row;
-  padding: var(--padding-xs) var(--padding-6xl);
-  text-align: center;
-  font-size: var(--font-size-13xl);
-  color: var(--color-white);
-}
-.applytoday {
   background-color: var(--color-white);
   width: 1728px;
   height: 398px;
@@ -1333,8 +1312,8 @@
 }
 .image-3-icon {
   position: relative;
-  width: 159.5px;
-  height: 50px;
+  width: 320px;
+  height: auto;
   object-fit: cover;
 }
 .supporting-text12 {
@@ -1481,6 +1460,10 @@
 .button-parent{
   top: 250px;
 }
+  .blog-post-card-wraper{
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
   .frame-div{
     flex-direction: column;
   }
@@ -1593,9 +1576,13 @@
     gap: var(--gap-0);
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 460px) {
   .frame-parent4{
     width: 100%;
+  }
+  .blog-post-card-wraper{
+    flex: 0 0 100%;
+    max-width: 100%;
   }
   .home-parent {
     display: none;
