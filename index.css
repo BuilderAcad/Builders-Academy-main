@@ -30,7 +30,7 @@
   border: 0;
   padding: 0;
   position: relative;
-  width: 170px;
+  width: 200px;
 }
 .frame-parent {
   margin-left: auto;
@@ -1101,6 +1101,7 @@
 }
 .donateframe {
   max-width: 1500px;
+  margin: 80px 0;
   background-color: var(--color-whitesmoke-100);
   overflow: hidden;
   padding: 47px 69px;
@@ -1504,7 +1505,7 @@
   .frame-div{
     flex-direction: row;
   }
-
+  
   .heading1 {
     font-size: var(--font-size-11xl);
     text-align: center;
@@ -1521,6 +1522,9 @@
   }
   .home-parent {
     display: none;
+  }
+  .image-3{
+    width: 170px;
   }
   .apply-now {
     font-size: var(--font-size-xs);
@@ -1570,7 +1574,12 @@
     flex: 0 0 100%;
     max-width: 100%;
   }
-  
+  .applytoday{
+    padding: 100px 25px;
+  }
+  .donateframe{
+    padding: 40px 25px;
+  }
   /* for ready to build section inner content */
   .no-matter-what{
     font-size: var(--font-size-6xl);
@@ -1580,11 +1589,5 @@
   .team-member-wrap{
     flex: 0 0 100%;
     max-width: 100%;
-  }
-
-
-  .home-work {
-    align-items: center;
-    justify-content: flex-start;
   }
 }
