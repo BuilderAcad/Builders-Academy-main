@@ -1518,7 +1518,7 @@
 }
 @media screen and (max-width: 420px) {
   .header{
-    padding: 20px;
+    padding: 5px;
   }
   .home-parent {
     display: none;
@@ -1558,8 +1558,8 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
-    padding-left: 80px;
-    padding-top: var(--padding-21xl);
+    padding : 0 20px;
+    height: auto;
     padding-bottom: 0;
   }
   .frame-container,
@@ -1580,12 +1580,40 @@
   .donateframe{
     padding: 40px 25px;
   }
+  .button-base2{
+    padding: 0px;
+  }
+  .applytoday{
+    padding: 20px;
+  }
+  .ready-to-build-the-future-parent {
+    
+    gap: 5px;
+}
+
+.ready-to-build-container{
+  line-height: normal;
+}
+  
   /* for ready to build section inner content */
   .no-matter-what{
     font-size: var(--font-size-6xl);
-    line-height: 45px;
+    line-height: normal;
+    text-align: left;
   }
   
+  .donateframe{
+    padding: 20px;
+  }
+  .shape-whats-possible{
+    line-height: normal;
+    margin-bottom: 10px;
+  }
+  .emerging-technologies-should{
+    line-height: normal;
+    margin-bottom: 20px;
+    
+  }
   .team-member-wrap{
     flex: 0 0 100%;
     max-width: 100%;
