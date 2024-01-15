@@ -1641,19 +1641,17 @@ html{
   }
   .frame-mobile-1698 {
     display: flex;
-    padding: auto;
+    margin: 0px;
     height: auto;
-    margin-bottom: 20px;
   }
   .mainsection {
-    width: auto;
-    align-self: unset;
+    display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding : 0 20px;
-    height: auto;
+    justify-content: left;
+    padding : 0px;
+    margin: 0px 5px;
     padding-bottom: 0;
+    height: fit-content;
   }
   .courses{
     gap: 10px;
@@ -1665,7 +1663,7 @@ html{
   .frame-parent4{
     flex: 0 0 100%;
     max-width: 100%;
-    padding: 5px;
+    
   }
   .blog-post-card-wraper{
     flex: 0 0 100%;
@@ -1735,4 +1733,8 @@ html{
     font-size: 25px;
     line-height: normal;
   }
+  .we-are-a{
+    max-width: 90%;
+  }
+
 }
