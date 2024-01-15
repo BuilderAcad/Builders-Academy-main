@@ -1488,26 +1488,12 @@
   .header{
     padding: 20px;
   }
-  .frame-parent4{
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-  .blog-post-card-wraper{
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
   .home-parent {
     display: none;
   }
   .apply-now {
     font-size: var(--font-size-xs);
     text-align: center;
-  }
-  .image-3-parent {
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-    gap: var(--gap-0);
   }
   .main-description {
     font-size: var(--font-size-6xl);
@@ -1545,13 +1531,21 @@
   .frame-div{
     flex-direction: column;
   }
-
+  .frame-parent4{
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .blog-post-card-wraper{
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  
   /* for ready to build section inner content */
   .no-matter-what{
     font-size: var(--font-size-6xl);
     line-height: 45px;
   }
-
+  
   .team-member-wrap{
     flex: 0 0 100%;
     max-width: 100%;
