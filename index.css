@@ -507,7 +507,7 @@
 .frame-group {
   flex: 1;
   justify-content: center;
-  gap: 61px;
+  gap: auto;
 }
 .mainsection-inner {
   align-self: stretch;
@@ -1412,11 +1412,53 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .frame-mobile-1698,
-  .mainimage {
+  .frame-mobile-1698
+  /* ,
+  .mainimage */
+   {
     display: none;
   }
+  .frame-group{
+    align-items: normal;
+  }
+  .mainimage-child{
+    top : 140px
+  }
+  .group-parent{
+    width:550px;
+    height: 400px;
+  
+  }
+.frame-child{
+  width: 400px;
+  height:400px;
+}
 
+.goal1-parent{
+  width: auto;
+}
+.vector-icon1,.vector-icon2{
+  width: 100px;
+  height: 30px;
+}
+.collaboration-item{
+  height: 60px;
+}
+.mainsection{
+  font-size: 55px;
+}
+.main-description{
+  height: auto;
+}
+.main-description-parent{
+  height: auto;
+}
+.maintheme{
+  height: auto;
+}
+.button-parent{
+  top: 250px;
+}
   .blog-post-card-wraper{
     flex: 0 0 50%;
     max-width: 50%;
