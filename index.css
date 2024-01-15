@@ -1090,36 +1090,7 @@
   color: var(--color-slategray);
   text-align: center;
 }
-.emerging-technologies-should,
-.shape-whats-possible {
-  position: relative;
-  display: flex;
-  align-items: center;
-  flex-shrink: 0;
-}
-.shape-whats-possible {
-  letter-spacing: -0.02em;
-  line-height: 44px;
-  font-weight: 600;
-  width: 1038.9px;
-  height: 74px;
-}
-.emerging-technologies-should {
-  font-size: var(--font-size-6xl);
-  letter-spacing: 0.01em;
-  line-height: 180%;
-  color: var(--color-slategray);
-  width: 1565px;
-  height: 273px;
-}
-.shape-whats-possible-donate-parent {
-  height: 367px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-.donate-wrapper {
+.apply-today-wrapper {
   text-decoration: none;
   border-radius: var(--br-xl);
   background-color: var(--color-mediumslateblue-100);
@@ -1129,7 +1100,7 @@
   font-size: var(--font-size-6xl);
   color: var(--color-white);
 }
-.donate {
+.apply-today {
   letter-spacing: -0.02em;
   line-height: 45px;
 }
@@ -1138,29 +1109,47 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-.frame-parent15 {
-  flex: 1;
-  align-items: flex-start;
-}
-.donateframe,
-.donateframe-inner {
   align-items: center;
 }
-.donateframe-inner {
-  align-self: stretch;
-  flex: 1;
-}
 .donateframe {
+  max-width: 1500px;
   background-color: var(--color-whitesmoke-100);
-  height: 529px;
   overflow: hidden;
-  flex-shrink: 0;
   padding: 47px 69px;
   box-sizing: border-box;
   text-align: left;
   font-size: 40px;
 }
+.donateframe-inner {
+  align-self: stretch;
+  flex: 1;
+}
+.shape-whats-possible-donate-parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.shape-whats-possible {
+  letter-spacing: -0.02em;
+  line-height: 44px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+.emerging-technologies-should,
+.shape-whats-possible {
+  display: flex;
+  align-items: center;
+}
+.emerging-technologies-should {
+  margin-bottom: 50px;
+  font-size: var(--font-size-6xl);
+  letter-spacing: 0.01em;
+  line-height: 180%;
+  color: var(--color-slategray);
+}
+
 .subheading5 {
   line-height: 24px;
   font-weight: 600;
@@ -1412,10 +1401,7 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .frame-mobile-1698
-  /* ,
-  .mainimage */
-   {
+  .frame-mobile-1698{
     display: none;
   }
   .frame-group{
@@ -1466,17 +1452,8 @@
   .frame-div{
     flex-direction: column;
   }
-  .emerging-technologies-should {
-    font-size: var(--font-size-6xl);
-    text-align: left;
-    width: 1100px;
-  }
-  .donateframe {
-    height: auto;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
+
+
   .team-member-wrap4-parent,
   .team-member-wrap5-parent {
     flex-direction: row;
@@ -1514,34 +1491,6 @@
     flex-direction: row;
   }
 
-  .shape-whats-possible {
-    font-size: var(--font-size-6xl);
-    line-height: 50px;
-    text-align: left;
-    width: 800px;
-  }
-  .emerging-technologies-should {
-    font-size: var(--text-lg-medium-size);
-    width: 800px;
-  }
-  .shape-whats-possible-donate-parent {
-    width: auto;
-    align-self: unset;
-    height: 367px;
-    gap: var(--gap-xl);
-    align-items: center;
-    justify-content: center;
-  }
-  .donate {
-    font-size: var(--text-xl-normal-size);
-  }
-  
-  .donateframe-inner {
-    gap: var(--gap-xl);
-  }
-  .donateframe {
-    height: 507px;
-  }
   .subheading5 {
     font-size: var(--font-size-xs);
   }
@@ -1569,7 +1518,7 @@
     gap: var(--gap-0);
   }
 }
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 420px) {
   .frame-parent4{
     width: 100%;
   }
@@ -1630,45 +1579,12 @@
     flex-direction: column;
   }
 
-  .ready-to-build-container {
-    font-size: 35px;
-    letter-spacing: -0.02em;
-    line-height: 48px;
-    text-align: left;
-    width: 300px;
+  /* for ready to build section inner content */
+  .no-matter-what{
+    font-size: var(--font-size-6xl);
+    line-height: 45px;
   }
-  .no-matter-what {
-    font-size: var(--font-size-xs);
-    line-height: 20px;
-    text-align: left;
-  }
-  .ready-to-build-the-future-parent {
-    width: auto;
-    align-self: unset;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-  }
-  .shape-whats-possible {
-    font-size: var(--font-size-mini);
-    width: 400px;
-  }
-  .emerging-technologies-should {
-    font-size: var(--font-size-xs);
-    width: 400px;
-  }
-  .donate {
-    font-size: var(--font-size-xs);
-  }
-  .donateframe-inner {
-    width: auto;
-    align-self: unset;
-    height: 25px;
-  }
-  .donateframe-inner {
-    height: auto;
-    flex-direction: column;
-  }
+
   .our-philosophy-is {
     font-size: var(--font-size-xs);
   }
