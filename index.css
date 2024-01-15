@@ -1517,7 +1517,7 @@
 }
 @media screen and (max-width: 420px) {
   .header{
-    padding: 20px;
+    padding: 5px;
   }
   .home-parent {
     display: none;
@@ -1554,8 +1554,8 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
-    padding-left: 80px;
-    padding-top: var(--padding-21xl);
+    padding : 0 20px;
+    height: auto;
     padding-bottom: 0;
   }
   .frame-container,
@@ -1569,6 +1569,9 @@
   .blog-post-card-wraper{
     flex: 0 0 100%;
     max-width: 100%;
+  }
+  .button-base2{
+    padding: 0px;
   }
   .applytoday{
     padding: 20px;
