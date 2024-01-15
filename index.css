@@ -1469,6 +1469,37 @@
 .button-parent{
   top: 250px;
 }
+.placeholder1 {
+  top: 10px;
+  left: 70.4px;
+  
+  width: 300px;
+  height: 300px;
+}
+.placeholder {
+  top: 0;
+  left: 63.4px;
+  width: 330px;
+  height: 330px;
+}
+.mask-group-icon{
+  top: 16px;
+  left: 70.4px;
+  height: 300px;
+  width: 300px;
+}
+.mainimage .div1,.div2,.div{
+  display: none;
+}
+.mainimage-child {
+  
+  top: 120.1px;
+  left: 175px;
+  width: 372.9px;
+  height: 424.3px;
+  /* object-fit: cover; */
+}
+
 
   .frame-div{
     flex-direction: row;
