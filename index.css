@@ -9,12 +9,13 @@
 .fluid{
   width: 100%;
 }
-.image-3 {
-  cursor: pointer;
-  border: 0;
-  padding: 0;
-  position: relative;
-  width: 170px;
+.header {
+  align-self: stretch;
+  background-color: var(--color-white);
+  padding: 35px 50px;
+  text-align: left;
+  font-size: var(--text-lg-medium-size);
+  color: var(--color-black);
 }
 .blog,
 .home {
@@ -23,6 +24,18 @@
 }
 .blog {
   text-align: right;
+}
+.image-3 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  position: relative;
+  width: 170px;
+}
+.frame-parent {
+  margin-left: auto;
+  justify-content: center;
+  gap: 72px;
 }
 .home-parent {
   width: 344px;
@@ -56,24 +69,8 @@
   flex-direction: row;
   align-items: center;
 }
-.frame-parent {
-  justify-content: center;
-  gap: 72px;
-}
-.header,
-.image-3-parent {
-  justify-content: space-between;
-}
-.image-3-parent {
-  width: 1610px;
-}
-.header {
-  align-self: stretch;
-  background-color: var(--color-white);
-  padding: 35px 118px;
-  text-align: left;
-  font-size: var(--text-lg-medium-size);
-  color: var(--color-black);
+.image-3-parent{
+  width: 100%;
 }
 .frame-child {
   position: absolute;
@@ -1488,6 +1485,9 @@
   }
 }
 @media screen and (max-width: 420px) {
+  .header{
+    padding: 20px;
+  }
   .frame-parent4{
     flex: 0 0 100%;
     max-width: 100%;
@@ -1504,8 +1504,7 @@
     text-align: center;
   }
   .image-3-parent {
-    width: auto;
-    align-self: unset;
+    width: 100%;
     align-items: center;
     justify-content: space-between;
     gap: var(--gap-0);
