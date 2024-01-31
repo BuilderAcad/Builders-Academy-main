@@ -1,3 +1,8 @@
+body {
+  
+  scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
 *{
   box-sizing:border-box;
   font-family: var(--text-md-normal);
@@ -62,7 +67,7 @@ html{
   gap: 72px;
 }
 .home-parent {
-  width: 344px;
+  width: auto;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -87,6 +92,14 @@ html{
   width: 484px;
   height: 467.1px;
   z-index: 0;
+}
+
+.home-parent a{
+  color: rgb(17, 10, 10);
+  text-decoration: none; /* Remove underline */
+  padding: 10px;
+  /* margin: 0 10px; */
+  cursor: pointer; /* Add this line to set the cursor to a pointer */
 }
 .maintheme-inner {
   position: absolute;
@@ -449,8 +462,8 @@ html{
   line-height: 189%;
   font-weight: 600;
   color: var(--color-dimgray);
-  width: 364px;
-  height: 89px;
+  /* width: 364px; */
+  height: auto;
 }
 .empowering-minds-building-fut-parent {
   display: flex;
@@ -1551,8 +1564,9 @@ html{
     font-size: 25px;
     line-height: normal;
   }
-  .we-are-a{
-    max-width: 90%;
-  }
+  /* .we-are-a{
+    max-width: 400px;
+    height: auto;
+  } */
 
 }

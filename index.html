@@ -16,20 +16,20 @@
       <section class="header">
         <div class="image-3-parent">
           <a href = "/" class="image-3">
-            <img class = "image-3" src = "./public/logo-bg-removed.png" />
+            <img class = "image-3" src = "./public/logo-bg-removed.svg" />
           </a>
           <div class="frame-parent">
             <div class="home-parent">
-              <div class="home">Home</div>
-              <div class="home">Program</div>
-              <div class="blog">Blog</div>
-              <div class="home">About Us</div>
+              <a href="#mainsection">Home</a>
+              <a href="#courses">Courses</a>
+              <a href="#instructures">Teachers</a>
+              <a href="#footsection">Contact Us</a>
             </div>
           </div>
         </div>
       </section>
       <!-- mainsection -->
-      <section class="mainsection">
+      <section class="mainsection" id = "mainsection">
         <div class="mainsection-inner">
           <div class="frame-group">
             <!-- mainsection left side div -->
@@ -46,8 +46,8 @@
                   <div class="main-description-parent">
                     <b class="main-description">
                       <span>Empowering </span>
-                      <span class="minds">Minds</span>
-                      <span>, Building </span>
+                      <span class="minds">Minds,</span>
+                      <span>Building </span>
                       <span class="minds">Future</span>
                     </b>
                     <div class="sub-description">
@@ -57,11 +57,12 @@
                     </div>
                   </div>
                   
-                  <button class="button">
+                  <button class="button" type="button" onclick="myFunction()">
                     <div class="button-base">
                       <div class="text">Join the Community</div>
                     </div>
                   </button>
+                  
 
                   <div class="goal1-parent">
                     <div class="goal1">
@@ -211,7 +212,9 @@
           </div>
         </div>
       </section>
-      <div class="courses">
+
+      <!-- Courses section -->
+      <div class="courses" id = "courses">
         <div class="heading-and-supporting-text">
           <div class="heading-and-subheading">
             <div class="subheading">Our Services</div>
@@ -321,6 +324,8 @@
             </div>
         </div>
       </div>
+
+      <!-- Alumni Section -->
       <div class="alumnisuccess">
         <div class="alumni-success-stories-parent">
           <div class="alumni-success-stories">Alumni Success Stories</div>
@@ -469,6 +474,7 @@
         </div>
       </div>
 
+      <!-- Apply Section -->
       <div class="applytoday">
         <div class="ready-to-build-the-future-parent">
           <div class="ready-to-build-container">
@@ -487,6 +493,8 @@
             </b>
           </a>
       </div>
+
+      <!-- Donate Section -->
       <div class="donateframe">
         <div class="donateframe-inner">
             <div class="shape-whats-possible-donate-parent">
@@ -512,7 +520,9 @@
             </stripe-buy-button>
         </div>
       </div>
-      <div class="instructures">
+
+      <!-- Teachers Section -->
+      <div class="instructures" id ="instructures">
         <div class="frame-parent16">
           <div class="subheading-parent">
             <h3>Tutors</h3>
@@ -667,11 +677,13 @@
         </div>
       </div>
 
-      <div class="footsection">
+      <!-- Footer -->
+
+      <div class="footsection" id ="footsection">
         <div class="logo-and-supporting-text-parent">
           <div class="logo-and-supporting-text">
             <a href="/">
-              <img class="image-3-icon" alt="" src="./public/logo-bg-removed.png" />
+              <img class="image-3-icon" alt="" src="./public/logo-bg-removed.svg" />
             </a>
 
             <div class="supporting-text-wrapper">
@@ -760,5 +772,7 @@
     <script async
       src="https://js.stripe.com/v3/buy-button.js">
     </script>
+   
+    <script src="index.js"></script>
   </body>
 </html>
