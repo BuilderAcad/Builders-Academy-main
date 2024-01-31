@@ -1224,6 +1224,7 @@ html{
   align-items: center;
 }
 .social-icons4 {
+  padding: 12px 0;
   justify-content: flex-start;
   gap: 24px;
 }
@@ -1257,7 +1258,6 @@ html{
   padding: var(--padding-mid) var(--padding-6xl);
 }
 .logo-and-supporting-text {
-  height: 206px;
   flex-direction: column;
 }
 .links {
