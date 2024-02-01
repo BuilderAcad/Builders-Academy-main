@@ -472,13 +472,14 @@ html{
   justify-content: flex-start;
   gap: var(--gap-3xs);
 }
-.text2 {
-  position: relative;
-  font-size: var(--font-size-xs);
-  line-height: 28px;
-  font-weight: 600;
-  color: var(--color-white);
-  text-align: left;
+.button-base2,
+.button2 {
+  border-radius: var(--br-5xs);
+}
+.button2 {
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;
 }
 .button-base2 {
   align-self: stretch;
@@ -490,54 +491,12 @@ html{
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: var(--padding-base) var(--padding-9xl);
+  padding: 6px 12px;
 }
-.button-base2,
-.button-base3,
-.button2 {
-  border-radius: var(--br-5xs);
-  justify-content: center;
-}
-.button2 {
-  cursor: pointer;
-  border: 0;
-  padding: 0;
-  background-color: transparent;
-  width: 100px;
-  height: 30px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.button-base3 {
-  align-self: stretch;
-  flex: 1;
-  background-color: var(--color-lavender-100);
-  box-shadow: var(--shadow-xs);
-  border: 1px solid var(--color-lavender-100);
-  overflow: hidden;
-  padding: var(--padding-base) var(--padding-9xl);
-}
-.button-base3,
-.button-group,
-.button3 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.button3 {
-  border-radius: var(--br-5xs);
-  width: 100px;
-  height: 30px;
-  justify-content: center;
-}
-.button-group {
-  width: 230.2px;
-  height: 51px;
-  justify-content: flex-start;
-  gap: 19px;
-  font-size: var(--font-size-xs);
-  color: var(--color-slateblue);
+.text2 {
+  line-height: 28px;
+  font-weight: 600;
+  color: var(--color-white);
 }
 .goal1-group {
   width: 212.7px;
@@ -1511,9 +1470,6 @@ html{
     flex: 0 0 100%;
     max-width: 100%;
   }
-  .button-base2{
-    padding: 0px;
-  }
   .applytoday{
     padding: 20px;
   }
@@ -1564,9 +1520,4 @@ html{
     font-size: 25px;
     line-height: normal;
   }
-  /* .we-are-a{
-    max-width: 400px;
-    height: auto;
-  } */
-
 }
