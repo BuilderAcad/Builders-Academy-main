@@ -100,7 +100,18 @@ html{
   padding: 10px;
   /* margin: 0 10px; */
   cursor: pointer; /* Add this line to set the cursor to a pointer */
+  transition: color 0.5s ease;   /* Adding a smooth color transition */
+
+  font-weight: bold;
+  font-size: 16px;
+
+  
 }
+
+.home-parent a:hover {
+  color: #ffd700; /* Change to the desired hover color */
+  }
+
 .maintheme-inner {
   position: absolute;
   top: 47.9px;
@@ -1033,6 +1044,7 @@ html{
   text-align: center;
   font-size: var(--font-size-6xl);
   color: var(--color-white);
+  cursor: pointer;
 }
 .apply-today {
   letter-spacing: -0.02em;
