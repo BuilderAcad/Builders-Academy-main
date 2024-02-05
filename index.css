@@ -1,11 +1,9 @@
-body {
-  
-  scroll-behavior: smooth; /* Enable smooth scrolling */
-}
-
 *{
   box-sizing:border-box;
   font-family: var(--text-md-normal);
+}
+body { 
+  scroll-behavior: smooth; /* Enable smooth scrolling */
 }
 html::-webkit-scrollbar{
   width: 6px;
@@ -41,7 +39,7 @@ html{
 .header {
   align-self: stretch;
   background-color: var(--color-white);
-  padding: 25px 50px;
+  padding: 0 50px;
   text-align: left;
   font-size: var(--text-lg-medium-size);
   color: var(--color-black);
