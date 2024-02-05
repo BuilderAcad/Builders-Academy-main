@@ -108,6 +108,7 @@ html{
 
 .home-parent a:hover {
   color: #ffd700; /* Change to the desired hover color */
+  color: var(--color-slateblue)
   }
 
 .maintheme-inner {
@@ -223,16 +224,10 @@ html{
 .creative-thinking {
   line-height: 40px;
   display: inline-block;
-  width: 164px;
   height: 40px;
 }
 .goal1-parent{
-  position: absolute;
-  left: 0;
-  width: 636.2px;
-}
-.goal1-parent {
-  top: 490.6px;
+  gap: 30px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -1243,21 +1238,10 @@ html{
   .mainimage-child{
     top : 140px
   }
-  .group-parent{
-    width:550px;
-  }
   .frame-child{
     width: 400px;
     height:400px;
   }
-
-  .goal1-parent{
-    width: auto;
-  }
-  /* .vector-icon1{
-    width: 100px;
-    height: 30px;
-  } */
   .collaboration-item{
     height: 60px;
   }
@@ -1308,19 +1292,12 @@ html{
   .mainimage-child{
     top : 140px
   }
-  .group-parent{
-    width:auto;
-    height: 400px;
-  
-  }
+
   .frame-child{
     width: 400px;
     height:400px;
   }
 
-  .goal1-parent{
-    width: auto;
-  }
   .collaboration-item{
     display: none;
   }
@@ -1401,6 +1378,12 @@ html{
     justify-content: flex-end;
     transform: rotate(0deg);
   }
+  .goal1-parent{
+    margin: auto;   
+    /* padding: 10px;  */
+    flex-direction: column;
+    align-items: center;
+  }
   .vector-icon1{
     width: 45px;
   }
@@ -1424,6 +1407,10 @@ html{
   }
   .courses{
     gap: 10px;
+  }
+
+  .alumnisuccess{
+    padding: 10px;
   }
   .frame-container,
   .frame-div{
