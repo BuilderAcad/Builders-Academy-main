@@ -147,14 +147,11 @@ html{
   z-index: 1;
 }
 .main-description-parent {
-  position: absolute;
-  top: 0;
-  left: 6px;
-  height: 339px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
+  gap: 36px;
 }
 .text, .text1 {
   position: relative;
@@ -178,8 +175,7 @@ html{
   justify-content: center;
 }
 .button {
-  position: absolute;
-  top: 366.8px;
+  margin-top: 36px;
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -230,8 +226,7 @@ html{
   width: 164px;
   height: 40px;
 }
-.goal1-parent,
-.maintheme {
+.goal1-parent{
   position: absolute;
   left: 0;
   width: 636.2px;
@@ -245,17 +240,14 @@ html{
   font-size: var(--text-md-normal-size);
   color: var(--color-gray-200);
 }
-.maintheme {
-  top: 0;
-  height: 546.6px;
-}
+
 .maintheme-wrapper {
   position: relative;
   width: 636.2px;
-  height: 546.6px;
 }
 .collaboration {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   width: 100%;
   font-size: var(--font-size-11xl);
@@ -273,7 +265,7 @@ html{
 .collaboration1 {
   line-height: 34px;
   display: inline-block;
-  width: 182.6px;
+  /* width: 182.6px; */
   height: 70.5px;
 }
 .collaboration2 {
@@ -282,9 +274,11 @@ html{
   font-weight: 300;
   color: var(--color-gray-100);
 }
-
 .icon-wraper{
-  margin: auto;  
+  margin: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .vector-icon{
   width: 150px;
@@ -294,16 +288,7 @@ html{
   max-height: 100%;
 }
 .vector-icon1{
-  width: 150px;
-  height: auto;
-}
-.vector-icon2{
-  width: 150px;
-  height: auto;
-}
-.collaboration-item {
-  overflow: hidden;
-  width: 150px;
+  max-width: 80px;
   height: auto;
 }
 .group-parent {
@@ -471,15 +456,14 @@ html{
   line-height: 189%;
   font-weight: 600;
   color: var(--color-dimgray);
-  /* width: 364px; */
   height: auto;
 }
 .empowering-minds-building-fut-parent {
   display: flex;
+  gap: 36px;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: var(--gap-3xs);
 }
 .button-base2,
 .button2 {
@@ -522,13 +506,8 @@ html{
   color: var(--color-gray-100);
 }
 .collaboration4 {
-  position: absolute;
-  top: 0;
-  left: 0;
   line-height: 34px;
   display: inline-block;
-  width: 136.9px;
-  height: 41.3px;
 }
 .vector-icon12,
 .vector-icon13 {
@@ -553,8 +532,6 @@ html{
 }
 .collaboration3 {
   position: relative;
-  width: 379px;
-  height: 86px;
   font-size: var(--text-xl-normal-size);
   color: var(--color-mediumslateblue-100);
 }
@@ -568,15 +545,10 @@ html{
   width: 100px;
   height: 26px;
 }
-.frame-inner,
-.group-icon {
+.frame-inner{
   position: relative;
   width: 94px;
   height: 27px;
-}
-.group-icon {
-  width: 119px;
-  height: 20px;
 }
 .vector-parent {
   width: 259px;
@@ -593,11 +565,11 @@ html{
   flex-direction: column;
 }
 .frame-mobile-1698 {
-  height: 574px;
   display: none;
+  gap: 30px;
   align-items: flex-start;
   justify-content: center;
-  padding: var(--padding-lg) var(--padding-mini);
+  padding: 0 var(--padding-mini);
   font-size: var(--font-size-13xl);
 }
 .mainsection {
@@ -739,6 +711,7 @@ html{
   background-color: var(--color-white);
   flex-direction: column;
   color: var(--color-slateblue);
+  margin-top: 50px;
 }
 .classes-in-development {
   position: relative;
@@ -768,7 +741,7 @@ html{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: var(--padding-9xl) 15px;
+  padding: 15px;
   flex: 0 0 25%;
   max-width: 25%;
 }
@@ -1272,8 +1245,6 @@ html{
   }
   .group-parent{
     width:550px;
-    height: 400px;
-  
   }
   .frame-child{
     width: 400px;
@@ -1283,10 +1254,10 @@ html{
   .goal1-parent{
     width: auto;
   }
-  .vector-icon1,.vector-icon2{
+  /* .vector-icon1{
     width: 100px;
     height: 30px;
-  }
+  } */
   .collaboration-item{
     height: 60px;
   }
@@ -1350,10 +1321,6 @@ html{
   .goal1-parent{
     width: auto;
   }
-  .vector-icon1,.vector-icon2{
-    width: 100px;
-    height: 30px;
-  }
   .collaboration-item{
     display: none;
   }
@@ -1377,7 +1344,6 @@ html{
     left: 70.4px;
     width: 300px;
     height: 300px;
-    /* background-image: url("./public/man-image.png") */
   }
   .placeholder {
     top: 0;
@@ -1435,6 +1401,9 @@ html{
     justify-content: flex-end;
     transform: rotate(0deg);
   }
+  .vector-icon1{
+    width: 45px;
+  }
   .mainimage,
   .mainsection-inner {
     display: none;
@@ -1484,13 +1453,12 @@ html{
     padding: 20px;
   }
   .ready-to-build-the-future-parent {
-    
     gap: 5px;
-}
+  }
 
-.ready-to-build-container{
-  line-height: normal;
-}
+  .ready-to-build-container{
+    line-height: normal;
+  }
   
   /* for ready to build section inner content */
   .no-matter-what{
