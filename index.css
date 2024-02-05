@@ -296,10 +296,10 @@ html{
 }
 .mainimage-child {
   position: absolute;
-  top: 225.1px;
-  left: 275px;
-  width: 372.9px;
-  height: 424.3px;
+  top: 200px;
+  left: 225px;
+  width: 430px;
+  /* height: 424.3px; */
   object-fit: cover;
 }
 .mainimage-item,
@@ -328,19 +328,19 @@ html{
   top: 0;
   left: 63.4px;
   border-radius: var(--br-669xl-5);
-  width: 446.5px;
-  height: 427.5px;
 }
 .mainimage-inner,
 .placeholder1 {
   background-color: var(--color-mediumslateblue-100);
 }
+.placeholder, .placeholder1{
+  width: 520px;
+  height: 520px;    
+}
 .placeholder1 {
   top: 18.5px;
   left: 83.4px;
   border-radius: var(--br-669xl-5);
-  width: 445.8px;
-  height: 426.8px;    
   background-image: url("./public/man-image.png");
   background-size: cover;
 }
