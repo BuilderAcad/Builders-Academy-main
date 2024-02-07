@@ -204,13 +204,6 @@ html{
   position: relative;
   line-height: 40px;
 }
-.goal1 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: var(--gap-3xs);
-}
 .creative-thinking,
 .idea-icon {
   position: relative;
@@ -226,16 +219,6 @@ html{
   display: inline-block;
   height: 40px;
 }
-.goal1-parent{
-  gap: 30px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  font-size: var(--text-md-normal-size);
-  color: var(--color-gray-200);
-}
-
 .maintheme-wrapper {
   position: relative;
   width: 636.2px;
@@ -486,15 +469,6 @@ html{
   font-weight: 600;
   color: var(--color-white);
 }
-.goal1-group {
-  width: 212.7px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  font-size: var(--text-md-normal-size);
-  color: var(--color-gray-200);
-}
 .collaboration5 {
   margin: 0;
   font-weight: 300;
@@ -569,7 +543,6 @@ html{
 }
 .mainsection {
   align-self: stretch;
-  height: 729.3px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1222,6 +1195,16 @@ html{
   padding: 20px 489px;
   text-align: left;
   color: #98a2b3;
+  position: relative;
+}
+.section::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 1px;
+  left: 8vw;
+  right: 8vw;
+  background-color: grey;
 }
 .bottom-section{
   width: 100%;
@@ -1413,12 +1396,6 @@ html{
     align-items: flex-start;
     justify-content: flex-end;
     transform: rotate(0deg);
-  }
-  .goal1-parent{
-    margin: auto;   
-    /* padding: 10px;  */
-    flex-direction: column;
-    align-items: center;
   }
   .vector-icon1{
     width: 45px;
