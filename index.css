@@ -781,6 +781,7 @@ html{
   align-items: center;
   justify-content: center;
   gap: var(--gap-3xs);
+  padding: 10px;
 }
 .image-4-icon {
   position: relative;
@@ -1458,26 +1459,31 @@ html{
 
   .ready-to-build-container{
     line-height: normal;
+    font-size: var(--font-size-13xl);
+    text-align: center;
   }
   
+
   /* for ready to build section inner content */
   .no-matter-what{
-    font-size: var(--font-size-6xl);
+    font-size: var(--text-xl-normal-size);
     line-height: normal;
-    text-align: left;
   }
-  
+  .apply-today-wrapper{
+    padding: 7px 20px;
+  }
   .donateframe{
     padding: 20px;
   }
   .shape-whats-possible{
-    line-height: normal;
+    line-height: normal;    
+    font-size: var(--font-size-13xl);
     margin-bottom: 10px;
   }
   .emerging-technologies-should{
     line-height: normal;
     margin-bottom: 20px;
-    
+    font-size: var(--text-xl-normal-size);
   }
   .team-member-wrap{
     flex: 0 0 100%;
