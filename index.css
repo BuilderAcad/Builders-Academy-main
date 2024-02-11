@@ -460,12 +460,6 @@ html{
   align-items: center;
   justify-content: center;
 }
-.icon2 {
-  position: relative;
-  width: 26px;
-  height: 24px;
-  object-fit: cover;
-}
 .icon-wrapper {
   border-radius: var(--br-3xs);
   background-color: var(--color-lavender-100);
@@ -491,58 +485,11 @@ html{
   flex-direction: column;
   gap: var(--gap-11xl);
 }
-.learn-more-parent {
-  margin-top: auto;
-  display: flex;
-  width: 100%;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  gap: var(--gap-2xl);
-  text-align: center;
-  font-size: var(--text-lg-medium-size);
-}
-.learn-more {
-  position: relative;
-  letter-spacing: 0.02em;
-  line-height: 140%;
-  font-weight: 600;
-  color: var(--color-mediumslateblue-100);
-}
-.vector-icon16 {
-  width: 20px;
-  height: 15px;
-}
-.vector-icon16>path{
-  stroke:#7F56D9;
-}
-.free {
-  padding: 10px;
-  line-height: 24px;
-  font-weight: 500;
-  color: white;
-  text-decoration: none;
-}
-.free-wrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin-left: auto;
-  border-radius: var(--br-10xs);
-  background-color: var(--color-gainsboro-100);
-  width: 31px;
-  height: 19px;
-  overflow: hidden;
-  flex-shrink: 0;
-  padding: 0 var(--padding-5xs);
-  font-size: var(--font-size-xs);
-  color: var(--color-black);
-}
 .icon3 {
-  position: relative;
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
+  font-size: 32px;
+  text-align: center;
 }
 .frame-parent6,
 .icon-container {
@@ -554,7 +501,7 @@ html{
   background-color: var(--color-lavender-200);
   flex-direction: column;
   align-items: flex-start;
-  padding: var(--padding-xs) var(--padding-2xs);
+  padding: var(--padding-xs);
 }
 .frame-parent6 {
   flex-direction: row;
@@ -572,11 +519,11 @@ html{
   margin-top: 50px;
 }
 .classes-in-development {
-  position: relative;
   font-size: var(--text-lg-medium-size);
   line-height: 180%;
   color: var(--color-dimgray);
   display: inline-block;
+  padding: 0 10px;
 }
 
 .frame-container {
@@ -590,8 +537,7 @@ html{
   color: var(--color-white);
 }
 .frame-div,
-.frame-parent4,
-.learn-more-group {
+.frame-parent4{
   display: flex;
   justify-content: center;
 }
@@ -611,13 +557,13 @@ html{
   box-shadow: 0 67.1px 109.06px rgba(0, 0, 0, 0.05);
 }
 
-.frame-parent4:hover .classes-in-development, 
-.frame-parent4:hover .learn-more{
+.frame-parent4:hover .classes-in-development{
   color: white;
 }
-.frame-parent4:hover .vector-icon16>path {
-  stroke: white;
+.frame-parent4:hover .icon3{
+  color:black
 }
+
 .frame-content-wraper{
   display: flex;
   height: 100%;
@@ -627,7 +573,7 @@ html{
   box-shadow: 0 67.1px 109.06px rgba(0, 0, 0, 0.05);
   border: 1px solid var(--color-gainsboro-200);
   flex-direction: column;
-  padding: var(--padding-11xl) 22px;
+  padding: 22px 22px var(--padding-21xl) 22px;
   gap: 18px;
   color: var(--color-gray-100);
 }
@@ -637,24 +583,6 @@ html{
   align-items: center;
   gap: var(--gap-21xl);
 }
-
-
-.icon5 {
-  position: relative;
-  width: 25.7px;
-  height: 24px;
-  object-fit: cover;
-}
-.icon-wrapper1 {
-  border-radius: var(--br-3xs);
-  background-color: #fce7f6;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: var(--padding-xs) var(--padding-2xs);
-}
-
 .alumni-success-stories {
   position: relative;
   font-weight: 600;
