@@ -4,6 +4,39 @@ body {
 }
 
 :root {
+
+
+  /* fonts */
+  --font-ibm-plex-sans: "IBM Plex Sans";
+  --font-inter: Inter;
+
+  /* font sizes */
+  --font-size-smi: 13px;
+  --font-size-lg: 18px;
+  --font-size-6xl: 25px;
+
+  /* Colors */
+  --color-dimgray: #646464;
+  --color-gainsboro: #dbdbdb;
+  --color-black: #000;
+
+  /* Gaps */
+  --gap-mid: 17px;
+  --gap-0: 0px;
+  --gap-mini: 15px;
+
+  /* Paddings */
+  --padding-3xs: 10px;
+  --padding-10xl: 29px;
+  --padding-9xs: 4px;
+  --padding-xs: 12px;
+
+  /* Border radiuses */
+  --br-2xs: 11px;
+
+
+
+  
   /* fonts */
   --text-md-normal: Inter;
 
