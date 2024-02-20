@@ -28,7 +28,6 @@ html{
   width: 100%;
 }
 .home-work {
-  position: relative;
   background-color: var(--color-white);
   width: 100%;
   gap: 50px;
@@ -46,7 +45,6 @@ html{
 }
 .blog,
 .home {
-  position: relative;
   line-height: 24px;
 }
 .blog {
@@ -56,7 +54,6 @@ html{
   cursor: pointer;
   border: 0;
   padding: 0;
-  position: relative;
   width: 200px;
 }
 .frame-parent {
@@ -127,18 +124,12 @@ html{
   color: var(--color-dimgray);
   z-index: 1;
 }
-.text, .text1 {
-  position: relative;
+.text{
   font-size: var(--text-lg-medium-size);
   line-height: 28px;
   font-weight: 600;
   text-align: left;
-}
-.text{
   color: var(--color-white);
-}
-.text1{
-  color: var(--color-slateblue);
 }
 .button,
 .button-base {
@@ -166,32 +157,6 @@ html{
   padding: var(--padding-base) var(--padding-9xl);
   transition: ease-in-out 0.2s;
   z-index: 2;
-}
-.speak-icon {
-  position: relative;
-  width: 32px;
-  height: 32px;
-  overflow: hidden;
-  flex-shrink: 0;
-}
-.public-speaking {
-  position: relative;
-  line-height: 40px;
-}
-.creative-thinking,
-.idea-icon {
-  position: relative;
-  flex-shrink: 0;
-}
-.idea-icon {
-  width: 39.2px;
-  height: 33.7px;
-  overflow: hidden;
-}
-.creative-thinking {
-  line-height: 40px;
-  display: inline-block;
-  height: 40px;
 }
 .maintheme-wrapper {
   position: relative;
@@ -331,9 +296,6 @@ html{
   gap: 6.12px;
 }
 .tutors {
-  position: relative;
-}
-.tutors {
   opacity: 0.5;
 }
 .tutors-parent {
@@ -351,32 +313,14 @@ html{
   align-self: stretch;
   justify-content: space-between;
 }
-.empowering-minds-building-container,
 .we-are-a {
-  position: relative;
   display: inline-block;
   flex-shrink: 0;
-}
-.empowering-minds-building-container {
-  letter-spacing: -0.5px;
-  line-height: 48px;
-  text-transform: capitalize;
-  width: 320px;
-  height: 87px;
-}
-.we-are-a {
   font-size: var(--text-md-normal-size);
   line-height: 189%;
   font-weight: 600;
   color: var(--color-dimgray);
   height: auto;
-}
-.empowering-minds-building-fut-parent {
-  display: flex;
-  gap: 36px;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
 }
 .button-base2,
 .button2 {
@@ -450,7 +394,6 @@ html{
 }
 .heading {
   font-size: var(--display-md-semibold-size);
-  letter-spacing: -0.02em;
   line-height: 44px;
   color: var(--color-gray-100);
 }
@@ -525,7 +468,6 @@ html{
   display: inline-block;
   padding: 0 10px;
 }
-
 .frame-container {
   flex-wrap: wrap;
   display: flex;
@@ -672,8 +614,6 @@ html{
   align-self: stretch;
   gap: var(--gap-xs);
 }
-
-
 .alumnisuccess,
 .alumnisuccess-inner {
   display: flex;
@@ -745,7 +685,6 @@ html{
 }
 .no-matter-what {
   align-self: stretch;
-  position: relative;
   font-size: var(--font-size-11xl);
   letter-spacing: 0.01em;
   line-height: 180%;
@@ -766,7 +705,6 @@ html{
 .apply-today {
   line-height: 45px;
 }
-
 .donateframe {
   display: grid;
   grid-template-columns: 50% 1fr;
@@ -777,7 +715,6 @@ html{
   padding: 30px;
   text-align: left;
   font-size: 40px;
-  
 }
 .shape-whats-possible {
   font-weight: 600;
@@ -849,14 +786,12 @@ html{
 }
 
 .image-3-icon {
-  position: relative;
   width: 320px;
   height: auto;
   object-fit: cover;
 }
 .supporting-text12 {
   flex: 1;
-  position: relative;
   line-height: 24px;
 }
 .supporting-text-wrapper {
@@ -867,7 +802,6 @@ html{
 .heading1,
 .our-philosophy-is{
   align-self: stretch;
-  position: relative;
 }
 .heading1 {
   font-size: var(--display-md-semibold-size);
@@ -899,7 +833,6 @@ html{
 .name,
 .role {
   align-self: stretch;
-  position: relative;
 }
 .name {
   line-height: 28px;
