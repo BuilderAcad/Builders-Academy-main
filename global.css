@@ -41,7 +41,7 @@ body {
 
   
   /* fonts */
-  --text-md-normal: Inter;
+  --text-md-normal: Verdana, sans-serif;
 
   /* font sizes */
   --text-md-normal-size: 16px;
