@@ -216,7 +216,6 @@ html {
   background-color: var(--color-mediumslateblue-100);
 }
 .mainimageholder {
-  grid-column: 2;
   grid-row: 1/3;
   padding: 50px 0;
 }
@@ -454,7 +453,6 @@ html {
 .frame-container {
   flex-wrap: wrap;
   display: flex;
-  align-items: center;
   justify-content: center;
   text-align: left;
   align-items: stretch;
@@ -679,6 +677,10 @@ html {
   font-size: var(--font-size-6xl);
   color: var(--color-white);
   cursor: pointer;
+  transition: ease-in-out 0.2s;
+}
+.apply-today-wrapper:hover{
+  opacity: 0.8;
 }
 .apply-today {
   line-height: 45px;
@@ -766,6 +768,7 @@ html {
 .supporting-text12 {
   flex: 1;
   line-height: 24px;
+  text-align: center;
 }
 .supporting-text-wrapper {
   align-self: stretch;
