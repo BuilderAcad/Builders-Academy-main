@@ -63,3 +63,9 @@ function goToLink() {
       myButton.addEventListener('click', goToLink);
     }
   });
+
+//   blog
+document.getElementById("blog1").addEventListener("click", function() {
+    window.open("Blogs/blog1.html", "_blank"); // Replace "https://www.example.com" with the URL of the page you want to open
+  });
+  
