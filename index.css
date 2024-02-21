@@ -607,7 +607,7 @@ html {
 }
 .alumnisuccess-inner {
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   font-size: var(--text-sm-semibold-size);
   color: var(--color-gray-100);
 }
@@ -620,7 +620,7 @@ html {
   max-width: 25%;
 }
 .blog-post-card {
-  max-width: 400px;
+  /* max-width: 400px; */
   border-radius: var(--br-5xs);
   background-color: var(--color-white);
   box-shadow: var(--shadow-lg);
@@ -734,7 +734,7 @@ html {
   background-color: var(--color-whitesmoke-100);
   color: var(--color-slateblue);
 }
-.content5,
+
 .instructures {
   display: flex;
   align-items: center;
@@ -749,6 +749,9 @@ html {
   max-width: 1600px;
 }
 .content5 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   flex-direction: row;
   flex-wrap: wrap;
   font-size: var(--text-lg-medium-size);
