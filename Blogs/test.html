@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Center and Flex Start Cards</title>
+<style>
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px; /* Adjust container width as needed */
+    margin: 0 auto; /* Center the container */
+    padding: 20px;
+    border: 1px solid #ccc; /* Optional: just for visualization */
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .card {
+    width: 100px; /* Adjust as needed */
+    height: 150px; /* Adjust as needed */
+    background-color: #f0f0f0; /* Optional: card background color */
+    border: 1px solid #999; /* Optional: card border */
+    border-radius: 5px; /* Optional: card border radius */
+    display: flex; /* Optional: if you want to align content within cards */
+    justify-content: center; /* Optional: if you want to align content within cards */
+    align-items: center; /* Optional: if you want to align content within cards */
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="row">
+    <div class="card">Card 1</div>
+    <div class="card">Card 2</div>
+    <div class="card">Card 3</div>
+    <div class="card">Card 4</div>
+  </div>
+  <div class="row">
+    <div class="card">Card 5</div>
+    <div class="card">Card 6</div>
+  </div>
+</div>
+
+</body>
+</html>
