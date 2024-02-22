@@ -68,7 +68,7 @@
   line-height: 180%;
 }
 .as-decentralized-technologies-wrapper {
-  /* width: 781px; */
+  width: 60% ;
   padding: 15px;
   display: flex;
   flex-direction: row;
@@ -76,16 +76,16 @@
   justify-content: center;
 }
 .image-2-icon {
-  width: 535px;
+  max-width: 535px;
   position: relative;
-  height: 535px;
+  max-height: 535px;
   object-fit: cover;
 }
 .frame-group {
   align-self: stretch;
   display: flex;
   flex-direction: row;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
   /* gap: 160px; */
@@ -137,4 +137,31 @@
   font-size: var(--font-size-smi);
   color: var(--color-dimgray);
   font-family: var(--font-inter);
+}
+
+@media screen and (max-width: 1600px) {
+  .as-decentralized-technologies-wrapper{
+    order: 2;
+    width: 100%;
+  }
+  .image-2-icon{
+    order: 1;
+  }
+}
+@media screen and (max-width: 500px) {
+  .blog-explain{
+    padding: 5px;
+  }
+  .the-knowledge-gap-holding-back-parent {
+    padding: 15px;
+    text-align: justify;
+  }
+  .as-decentralized-technologies-wrapper{
+    width: 100%;
+    text-align: justify;
+  }
+  .image-2-icon{
+  width: 390px;
+  height: auto;
+ }
 }
