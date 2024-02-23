@@ -50,7 +50,7 @@ function scrollToTarget(targetElement) {
 // Function to handle button click and redirect to the link
 function goToLink() {
     // Replace 'https://example.com' with your desired link
-    window.location.href = 'https://discord.gg/SAY5CbVE';
+    window.location.href = 'https://discord.com/invite/uSgdwmJ8JG';
   }
   
   // Wait for the DOM to be fully loaded
