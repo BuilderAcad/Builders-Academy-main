@@ -274,7 +274,7 @@ html {
 .icon {
   position: relative;
   width: 49px;
-  height: 49px;
+  /* height: 49px; */
 }
 .content {
   display: flex;
@@ -285,12 +285,6 @@ html {
 }
 .tutors {
   opacity: 0.5;
-}
-.tutors-parent {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
 }
 .mainsection-inner {
   display: flex;
@@ -502,45 +496,9 @@ html {
   align-items: center;
   gap: var(--gap-21xl);
 }
-.alumni-success-stories {
-  position: relative;
-  font-weight: 600;
-  transform: rotate(0.15deg);
-}
-.each-of-these {
-  position: relative;
-  font-size: var(--text-xl-normal-size);
-  color: var(--color-slategray);
-}
-.alumni-success-stories-parent {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: var(--gap-3xs);
-  padding: 10px;
-}
-.image-4-icon {
-  position: relative;
-  max-width: 100%;
-  object-fit: cover;
-}
-.supporting-text,
-.text4 {
+.supporting-text{
   position: relative;
   line-height: 20px;
-}
-.text4 {
-  font-weight: 500;
-}
-.supporting-text {
-  color: var(--color-slategray);
-}
-.avatar-label-group {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
 }
 .arrow-up-right-icon {
   position: relative;
@@ -549,7 +507,6 @@ html {
   overflow: hidden;
   flex-shrink: 0;
 }
-.heading-and-icon,
 .icon-wrap {
   display: flex;
   justify-content: flex-start;
@@ -559,14 +516,7 @@ html {
   align-items: flex-start;
   padding: var(--padding-9xs) 0 0;
 }
-.heading-and-icon {
-  align-self: stretch;
-  flex-direction: row;
-  align-items: center;
-  gap: var(--gap-base);
-}
-.subheading1,
-.supporting-text1 {
+.subheading1{
   align-self: stretch;
   position: relative;
 }
@@ -575,67 +525,10 @@ html {
   font-weight: 600;
   color: var(--color-slateblue);
 }
-.supporting-text1 {
-  font-size: var(--text-md-normal-size);
-  line-height: 24px;
-  color: var(--color-slategray);
-}
-.heading-and-text {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.heading-and-text {
-  align-self: stretch;
-  gap: var(--gap-xs);
-}
-.alumnisuccess,
-.alumnisuccess-inner {
-  display: flex;
-  align-items: center;
-}
-.alumnisuccess {
-  flex-direction: column;
-  background-color: var(--color-white);
-  justify-content: flex-start;
-  padding: 32px 32px;
-  max-width: 1600px;
-  gap: var(--gap-11xl);
-  text-align: left;
-  font-size: var(--display-md-semibold-size);
-}
-.alumnisuccess-inner {
-  flex-wrap: wrap;
-  justify-content: space-around;
-  font-size: var(--text-sm-semibold-size);
-  color: var(--color-gray-100);
-}
-.blog-post-card-wraper {
-  padding: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex: 0 0 25%;
-  max-width: 25%;
-}
-.blog-post-card {
-  /* max-width: 400px; */
-  border-radius: var(--br-5xs);
-  background-color: var(--color-white);
-  box-shadow: var(--shadow-lg);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: var(--padding-5xl) var(--padding-mini);
-  gap: var(--gap-34xl);
-}
 .applytoday {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--color-white);
   overflow: hidden;
   flex-shrink: 0;
   flex-direction: column;
@@ -685,6 +578,221 @@ html {
 .apply-today {
   line-height: 45px;
 }
+
+/* alumnni success stories start */
+.alumni-success-stories {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 600;
+  font-family: inherit;
+  display: inline-block;
+  transform: rotate(0.15deg);
+  max-width: 100%;
+}
+.each-of-these {
+  position: relative;
+  font-size: var(--font-size-lg);
+  color: var(--color-slategray);
+}
+.alumni-frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px 0;
+  max-width: 100%;
+}
+.image-4-icon {
+  height: 196px;
+  width: 196px;
+  position: relative;
+  border-radius: var(--br-124xl);
+  object-fit: cover;
+}
+.image-frame {
+  width: 236px;
+  height: 236px;
+  margin: 0 !important;
+  position: absolute;
+  top: -118px;
+  left: 82px;
+  border-radius: var(--br-144xl);
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-xl);
+  box-sizing: border-box;
+}
+.supporting-text {
+  align-self: stretch;
+  position: relative;
+  line-height: 24px;
+}
+.heading-and-text {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 125px var(--padding-4xs) 0 ;
+  gap: 23px 0;
+}
+.quote-icon1,
+.quote-icon2 {
+  width: 20px;
+  height: 17.3px;
+  position: absolute;
+  margin: 0 !important;
+  top: 120px;
+  left: 15px;
+}
+.quote-icon2 {
+  width: 20.3px;
+  height: 17.6px;
+  top: 234px;
+  left: 356px;
+  object-fit: contain;
+  z-index: 1;
+}
+.testimonial-card {
+  width: 400px;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-mediumslateblue-200);
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 var(--padding-7xl) 10px;
+  box-sizing: border-box;
+  position: relative;
+  min-width: 400px;
+  min-height: 356px;
+  max-width: 100%;
+  margin-top: 150px;
+}
+.image-4-wrapper {
+  width: 236px;
+  height: 236px;
+  margin: 0 !important;
+  position: absolute;
+  top: -118px;
+  left: 82.3px;
+  border-radius: var(--br-144xl);
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-xl);
+  box-sizing: border-box;
+}
+.image-4-container {
+  width: 236px;
+  height: 236px;
+  margin: 0 !important;
+  position: absolute;
+  top: -118px;
+  left: 81.7px;
+  border-radius: var(--br-144xl);
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-xl);
+  box-sizing: border-box;
+}
+.image-4-frame {
+  width: 236px;
+  height: 236px;
+  margin: 0 !important;
+  position: absolute;
+  top: -118px;
+  left: 82px;
+  border-radius: var(--br-144xl);
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-xl);
+  box-sizing: border-box;
+}
+.alumnisuccess,
+.blog-post-card-parent {
+  display: flex;
+  align-items: center;
+  font-family: var(--text-md-normal);
+}
+.blog-post-card-parent {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 100%;
+  text-align: center;
+  font-size: var(--text-md-normal-size);
+  color: var(--color-white);
+}
+.alumnisuccess {
+  width: 100%;
+  background-color: var(--color-white);
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 32px 77px;
+  box-sizing: border-box;
+  min-height: 733px;
+  letter-spacing: normal;
+  text-align: left;
+  font-size: var(--font-size-17xl);
+}
+.alumni-name{
+  color: var(--color-plum);
+  margin-left: auto;
+}
+@media screen and (max-width: 1600px) {
+  .blog-post-card-parent {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .alumnisuccess {
+    padding-left: var(--padding-19xl);
+    padding-right: var(--padding-19xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 960px) {
+  .alumni-success-stories {
+    font-size: var(--font-size-10xl);
+  }
+  .alumni-name{
+    font-size: var(--font-size-7xl);
+    line-height: 20px;
+
+  }
+}
+@media screen and (max-width: 430px) {
+  .alumni-success-stories {
+    font-size: var(--font-size-3xl);
+  }
+  .each-of-these {
+    font-size: var(--text-md-normal-size);
+  }
+  .alumni-name {
+    font-size: var(--font-size-lgi);
+    line-height: 15px;
+  }
+
+}
+
+/* alumni success stories end */
+
 .donateframe {
   display: grid;
   grid-template-columns: 50% 1fr;
@@ -700,6 +808,7 @@ html {
   font-weight: 600;
   margin-bottom: 25px;
   padding-top: 60px;
+  line-height: 150%;
   text-align: center;
 }
 .donateframe-inner {
@@ -736,17 +845,18 @@ html {
 }
 
 .instructures {
-  display: flex;
   align-items: center;
   justify-content: center;
 }
 .frame-parent16,
 .instructures {
+  display: flex;
   flex-direction: column;
 }
 .frame-parent16 {
   gap: 29px;
   max-width: 1600px;
+  width: 100%;
 }
 .content5 {
   display: flex;
@@ -803,12 +913,9 @@ html {
   gap: var(--gap-xl);
 }
 .avatar-icon {
-  border-radius: var(--br-21xl);
-  /* max-width: 100%;
-  max-height: 100%; */
+  border-radius: 50%;
   overflow: hidden;
-  height: 400px;
-  width: 400px;
+  width: 250px;
   object-fit: cover;
 }
 .name,
@@ -843,6 +950,9 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+}
+.team-member{
+  gap: 20px;
 }
 .button-base4,
 .button4,
@@ -991,10 +1101,6 @@ html {
   .donateframe-inner {
     grid-row: 3;
   }
-  .blog-post-card-wraper {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
   .frame-div {
     flex-direction: column;
   }
@@ -1091,18 +1197,11 @@ html {
   .courses {
     gap: 10px;
   }
-  .alumnisuccess {
-    padding: 10px;
-  }
   .frame-container,
   .frame-div {
     flex-direction: column;
   }
   .frame-parent4 {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-  .blog-post-card-wraper {
     flex: 0 0 100%;
     max-width: 100%;
   }
