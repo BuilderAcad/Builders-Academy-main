@@ -629,7 +629,9 @@ html {
 .supporting-text {
   align-self: stretch;
   position: relative;
-  line-height: 24px;
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  line-height: 170%;
 }
 .heading-and-text {
   align-self: stretch;
@@ -652,7 +654,7 @@ html {
 .quote-icon2 {
   width: 20.3px;
   height: 17.6px;
-  top: 234px;
+  top: 284px;
   left: 356px;
   object-fit: contain;
   z-index: 1;
@@ -837,6 +839,7 @@ html {
 }
 .donate-image-wraper img {
   max-width: 100%;
+  border-radius: 50px;
 }
 .instructures {
   align-self: stretch;
