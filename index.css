@@ -1280,7 +1280,7 @@ html {
   object-fit: cover;
 }
 .learn-block-chain {
-  font-size: var(--font-size-6xl);
+  font-size: var(--font-size-lg);
   line-height: 100%;
   font-weight: 600;
   color: var(--color-black);
@@ -1288,8 +1288,8 @@ html {
 .as-decentralized-technologies {
   align-self: stretch;
   position: relative;
-  font-size: var(--font-size-lg);
-  line-height: 150%;
+  font-size: var(--font-size-md);
+  /* line-height: 150%; */
   font-family: var(--font-inter);
   display: flex;
   align-items: center;
@@ -1353,7 +1353,7 @@ html {
   box-sizing: border-box;
   text-align: left;
   font-size: var(--font-size-sm);
-  color: var(--color-dimgray);
+  /* color: var(--color-dimgray); */
   font-family: var(--font-ibm-plex-sans);
 }
 @media screen and (max-width: 960px) {
