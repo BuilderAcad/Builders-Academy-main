@@ -1,8 +1,8 @@
 * {
   box-sizing: border-box;
+  font-family: var(--text-md-normal);
 }
 body {
-  font-family: var(--text-md-normal);
   scroll-behavior: smooth;
 }
 html::-webkit-scrollbar {
@@ -582,18 +582,14 @@ html {
 /* alumnni success stories start */
 .alumni-success-stories {
   margin: 0;
-  position: relative;
   font-size: inherit;
   font-weight: 600;
-  font-family: inherit;
-  display: inline-block;
-  transform: rotate(0.15deg);
-  max-width: 100%;
+  text-align: center;
 }
 .each-of-these {
-  position: relative;
   font-size: var(--font-size-lg);
   color: var(--color-slategray);
+  text-align: center;
 }
 .alumni-frame {
   display: flex;
@@ -616,7 +612,6 @@ html {
   margin: 0 !important;
   position: absolute;
   top: -118px;
-  left: 82px;
   border-radius: var(--br-144xl);
   background-color: var(--color-white);
   display: flex;
@@ -655,12 +650,13 @@ html {
   width: 20.3px;
   height: 17.6px;
   top: 284px;
-  left: 356px;
+  right: 15px;
+  left: auto;
   object-fit: contain;
   z-index: 1;
 }
 .testimonial-card {
-  width: 400px;
+  max-width: 400px;
   border-radius: var(--br-5xs);
   background-color: var(--color-mediumslateblue-200);
   box-shadow: var(--shadow-lg);
@@ -671,9 +667,9 @@ html {
   padding: 0 var(--padding-7xl) 10px;
   box-sizing: border-box;
   position: relative;
-  min-width: 400px;
+  /* min-width: 400px; */
   min-height: 356px;
-  max-width: 100%;
+  width: 100%;
   margin-top: 150px;
 }
 .image-4-wrapper {
@@ -728,17 +724,17 @@ html {
 .blog-post-card-parent {
   display: flex;
   align-items: center;
-  font-family: var(--text-md-normal);
 }
 .blog-post-card-parent {
   align-self: stretch;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   gap: 20px;
   max-width: 100%;
   text-align: center;
   font-size: var(--text-md-normal-size);
   color: var(--color-white);
+  flex-wrap: wrap;
 }
 .alumnisuccess {
   width: 100%;
@@ -756,43 +752,6 @@ html {
   color: var(--color-plum);
   margin-left: auto;
 }
-@media screen and (max-width: 1600px) {
-  .blog-post-card-parent {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .alumnisuccess {
-    padding-left: var(--padding-19xl);
-    padding-right: var(--padding-19xl);
-    box-sizing: border-box;
-  }
-}
-@media screen and (max-width: 960px) {
-  .alumni-success-stories {
-    font-size: var(--font-size-10xl);
-  }
-  .alumni-name{
-    font-size: var(--font-size-7xl);
-    line-height: 20px;
-
-  }
-}
-@media screen and (max-width: 430px) {
-  .alumni-success-stories {
-    font-size: var(--font-size-3xl);
-  }
-  .each-of-these {
-    font-size: var(--text-md-normal-size);
-  }
-  .alumni-name {
-    font-size: var(--font-size-lgi);
-    line-height: 15px;
-  }
-
-}
-
 /* alumni success stories end */
 
 .donateframe {
@@ -808,8 +767,7 @@ html {
 }
 .shape-whats-possible {
   font-weight: 600;
-  margin-bottom: 25px;
-  padding-top: 60px;
+  padding: 30px 0;
   line-height: 150%;
   text-align: center;
 }
@@ -1052,6 +1010,92 @@ html {
   text-decoration: none;
   color: grey;
 }
+/* blog-section */
+.image-2-icon,
+.learn-block-chain {
+  align-self: stretch;
+  position: relative;
+}
+.image-2-icon {
+  border-radius: var(--br-5xs);
+  max-width: 100%;
+  overflow: hidden;
+  height: 236.1px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.learn-block-chain {
+  font-size: var(--font-size-lg);
+  line-height: 100%;
+  font-weight: 600;
+  color: var(--color-black);
+}
+.as-decentralized-technologies {
+  font-size: var(--font-size-md);
+  flex-shrink: 0;
+  line-height: 160%;
+  color: var(--color-slategray);
+  letter-spacing: 0.5px;
+}
+.oct-7-2023 {
+  align-self: stretch;
+}
+.machine-learning,
+.oct-7-2023 {
+  position: relative;
+  line-height: 100%;
+  font-weight: 600;
+}
+.machine-learning-parent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--padding-9xs) 0;
+}
+.learn-block-chain-by-building-parent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 16px 0;
+}
+.blog1 {
+  flex: 1;
+  flex-direction: column;
+  gap: 12px 0;
+  max-width: 400px;
+}
+
+.blog-section,
+.blog1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.blog-section {
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  flex-direction: column;
+  padding: 50px 15px;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--font-size-sm);
+}
+.blog-area {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.blog-area:hover{
+  cursor: pointer;
+}
+/* blog section end*/
 .footsection,
 .home-work {
   overflow: hidden;
@@ -1157,10 +1201,19 @@ html {
     font-size: var(--font-size-11xl);
     text-align: center;
   }
+  /*Alumni Section Start*/
+  .alumnisuccess{
+    padding: 72px 15px;
+  }
+  /*Alumni Section End*/
   .home-work {
     align-items: center;
     justify-content: space-between;
     gap: var(--gap-0);
+  }
+  .blog-area {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 @media screen and (max-width: 430px) {
@@ -1264,108 +1317,6 @@ html {
     font-size: 25px;
     line-height: normal;
   }
-}
-
-
-
-/* blog-section */
-.image-2-icon,
-.learn-block-chain {
-  align-self: stretch;
-  position: relative;
-}
-.image-2-icon {
-  border-radius: var(--br-5xs);
-  max-width: 100%;
-  overflow: hidden;
-  height: 236.1px;
-  flex-shrink: 0;
-  object-fit: cover;
-}
-.learn-block-chain {
-  font-size: var(--font-size-lg);
-  line-height: 100%;
-  font-weight: 600;
-  color: var(--color-black);
-}
-.as-decentralized-technologies {
-  align-self: stretch;
-  position: relative;
-  font-size: var(--font-size-md);
-  /* line-height: 150%; */
-  font-family: var(--font-inter);
-  display: flex;
-  align-items: center;
-  height: 54px;
-  flex-shrink: 0;
-}
-.oct-7-2023 {
-  align-self: stretch;
-}
-.machine-learning,
-.oct-7-2023 {
-  position: relative;
-  line-height: 100%;
-  font-weight: 600;
-}
-.machine-learning-parent {
-  align-self: stretch;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: var(--padding-9xs) 0;
-}
-.learn-block-chain-by-building-parent {
-  align-self: stretch;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 8px 0;
-}
-.blog1 {
-  flex: 1;
-  flex-direction: column;
-  gap: 12px 0;
-  max-width: 400px;
-}
-
-.blog-section,
-.blog1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.blog-area {
-      /* align-self: stretch; */
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      gap: 76px;
-      max-width: 1600px;
-      justify-content: space-around;
-      align-items: center;
-}
-.blog-section {
-  width: 100%;
-  position: relative;
-  background-color: #fff;
-  flex-direction: column;
-  padding: 5px 10px 50px;
-  box-sizing: border-box;
-  text-align: left;
-  font-size: var(--font-size-sm);
-  /* color: var(--color-dimgray); */
-  font-family: var(--font-ibm-plex-sans);
-}
-@media screen and (max-width: 960px) {
-  .blog-area {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-}
-@media screen and (max-width: 420px) {
   .blog1 {
     flex: unset;
     align-self: stretch;
@@ -1374,4 +1325,5 @@ html {
     flex-direction: column;
   }
 }
+
 
