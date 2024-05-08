@@ -2,7 +2,7 @@
 function myFunction() {
 
 
-    var emailAddress = 'karkidivya5@gmail.com';
+    var emailAddress = 'contact@buildersacademy.ai';
     var subject = 'Hello from my website';
     var mailtoLink = 'mailto:' + emailAddress + '?subject=' + encodeURIComponent(subject);
     window.location.href = mailtoLink;
