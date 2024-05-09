@@ -153,6 +153,35 @@ html {
   transition: ease-in-out 0.2s;
   z-index: 2;
 }
+.button-donate,
+.button-base-donate {
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.button-donate {
+  margin: 20px 0 36px;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+}
+.button-donate:hover .button-base-donate {
+  opacity: 0.8;
+}
+.button-base-donate {
+  background-color: var(--color-mediumslateblue-100);
+  box-shadow: var(--shadow-xs-focused-4px-primary-100);
+  border: 1px solid var(--color-mediumslateblue-100);
+  overflow: hidden;
+  padding: var(--padding-base) var(--padding-9xl);
+  transition: ease-in-out 0.2s;
+  z-index: 2;
+  width: 200px;
+  height: 50px;
+}
 .maintheme-wrapper {
   position: relative;
 }
