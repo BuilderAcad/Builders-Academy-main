@@ -153,6 +153,35 @@ html {
   transition: ease-in-out 0.2s;
   z-index: 2;
 }
+.button-donate,
+.button-base-donate {
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.button-donate {
+  margin: 20px 0 36px;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+}
+.button-donate:hover .button-base-donate {
+  opacity: 0.8;
+}
+.button-base-donate {
+  background-color: var(--color-mediumslateblue-100);
+  box-shadow: var(--shadow-xs-focused-4px-primary-100);
+  border: 1px solid var(--color-mediumslateblue-100);
+  overflow: hidden;
+  padding: var(--padding-base) var(--padding-9xl);
+  transition: ease-in-out 0.2s;
+  z-index: 2;
+  width: 200px;
+  height: 50px;
+}
 .maintheme-wrapper {
   position: relative;
 }
@@ -1327,3 +1356,64 @@ html {
 }
 
 
+/* carousel section */
+.mySlides {display: none;}
+.img-carousel {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  /* position: relative; */
+  margin: auto;
+}
+
+/* Caption text */
+.text1 {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
