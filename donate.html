@@ -57,16 +57,26 @@
             />
 
             <div class="framefunding">
-              <h3 class="fund-a-class">Fund a class</h3>
+              <h3 class="fund-a-class">Sponsor an Intern</h3>
               <div class="when-you-make">
-                When you make a donation today, you directly invest in our
-                mission of launching Nepal's next generation of tech innovators
-                and creators.
+                Your donation sponsors an intern, providing them with essential hands-on experience and mentorship to thrive in the tech industry.
+
+
               </div>
-              <b class="frame">$ 5</b>
-              <button class="f-r-a-m-e">
+              <b class="frame">$25</b>
+              <!-- <button class="f-r-a-m-e">
                 <b class="donate">Donate</b>
-              </button>
+              </button> -->
+              <script
+                async
+                src="https://js.stripe.com/v3/buy-button.js"
+              ></script>
+
+              <stripe-buy-button
+                buy-button-id="buy_btn_1PIVDS1y76A4BFTwxNGXoast"
+                publishable-key="pk_test_51PIV7P1y76A4BFTwSoeP9yh4ldKddbJO4xbUzc17zOJM8cCq5EU6aiOpt3xvPRWuLQD5WIwLMxOFS2p5DWlkuPNN0093Wp6jr5"
+              >
+              </stripe-buy-button>
             </div>
           </div>
           <div class="donation-tier-item1">
@@ -78,16 +88,19 @@
             />
 
             <div class="fund-a-class-parent">
-              <h3 class="fund-a-class1">Fund a class</h3>
+              <h3 class="fund-a-class1">Sponsor a Project</h3>
               <div class="when-you-make1">
-                When you make a donation today, you directly invest in our
-                mission of launching Nepal's next generation of tech innovators
-                and creators.
+                Your donation sponsors a student project, enabling them to develop innovative solutions with expert guidance and advanced tools.
               </div>
-              <b class="b">$ 10</b>
-              <button class="donate-wrapper">
+              <b class="b">$99</b>
+              <!-- <button class="donate-wrapper">
                 <b class="donate1">Donate</b>
-              </button>
+              </button> -->
+              <stripe-buy-button
+                buy-button-id="buy_btn_1PIVW51y76A4BFTwoh1FwSqU"
+                publishable-key="pk_test_51PIV7P1y76A4BFTwSoeP9yh4ldKddbJO4xbUzc17zOJM8cCq5EU6aiOpt3xvPRWuLQD5WIwLMxOFS2p5DWlkuPNN0093Wp6jr5"
+              >
+              </stripe-buy-button>
             </div>
           </div>
           <div class="donation-tier-item2">
@@ -98,16 +111,19 @@
             />
 
             <div class="fund-an-entire-syllabus-parent">
-              <h3 class="fund-an-entire">Fund an entire syllabus</h3>
+              <h3 class="fund-an-entire">Sponsor a Bootcamp</h3>
               <div class="when-you-make2">
-                When you make a donation today, you directly invest in our
-                mission of launching Nepal's next generation of tech innovators
-                and creators.
+                Your donation sponsors a bootcamp, offering intensive training to aspiring IT professionals, preparing them to lead in technology.
               </div>
-              <b class="b1">$ 20</b>
-              <button class="donate-container">
+              <b class="b1">$999</b>
+              <!-- <button class="donate-container">
                 <b class="donate2">Donate</b>
-              </button>
+              </button> -->
+              <stripe-buy-button
+                buy-button-id="buy_btn_1PIVXc1y76A4BFTwjsaRM4nl"
+                publishable-key="pk_test_51PIV7P1y76A4BFTwSoeP9yh4ldKddbJO4xbUzc17zOJM8cCq5EU6aiOpt3xvPRWuLQD5WIwLMxOFS2p5DWlkuPNN0093Wp6jr5"
+              >
+              </stripe-buy-button>
             </div>
           </div>
         </div>
@@ -363,5 +379,6 @@
       defer
     ></script>
     <script src="index.js" defer></script>
+    <script async src="https://js.stripe.com/v3/buy-button.js"></script>
   </body>
 </html>
