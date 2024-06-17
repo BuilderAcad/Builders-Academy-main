@@ -211,9 +211,9 @@ html {
 
 }
 .latest-story{
-  font-size: var(--font-size-5xl);
+  font-size: var(--font-size-11xl);
   font-weight: 600;
-  
+  margin-bottom: 3.5rem;
 }
 .p {
   margin: 0;

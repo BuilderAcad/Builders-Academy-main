@@ -39,7 +39,7 @@
   line-height: 100%;
   font-weight: 600;
 }
-.frame-parent {
+.frame-parent-blog {
   align-self: stretch;
   display: flex;
   flex-direction: row;
@@ -75,13 +75,13 @@
   align-items: center;
   justify-content: center;
 }
-.image-2-icon {
+.image-2-icon-blog {
   max-width: 535px;
   position: relative;
   max-height: 535px;
   object-fit: cover;
 }
-.frame-group {
+.frame-group-blog{
   align-self: stretch;
   display: flex;
   flex-direction: row;
