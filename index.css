@@ -190,25 +190,35 @@ html {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  margin-top: auto;
+  font-size: var(--font-size-5xl)
+}
+.collaboration1{
+  min-width: 170px;
+  text-align: center;
+}
+.trusted-by{
   font-size: var(--font-size-11xl);
   color: var(--color-mediumslateblue-100);
-  margin-top: auto;
+  margin: 0;
+  font-weight: 600;
 }
-.collaboration-child {
-  border-radius: 50%;
-  background-color: rgba(126, 86, 217, 0.6);
-  width: 22.6px;
-  height: 22.2px;
+.industry-leaders{
+  margin: 0;
+  font-size: var(--font-size-5xl);
+  color: var(--color-slategray);
+  font-weight: 600;
+
+}
+.latest-story{
+  font-size: var(--font-size-5xl);
+  font-weight: 600;
+  
 }
 .p {
   margin: 0;
 }
-.collaboration2 {
-  margin: 0;
-  font-size: var(--font-size-6xl);
-  font-weight: 300;
-  color: var(--color-gray-100);
-}
+
 .icon-wraper {
   margin: auto;
   width: 100%;
