@@ -49,3 +49,22 @@ ul li, ol li {
     align-items: center;
     justify-content: space-between;
   }
+  .image-2-icon-blog{
+    /* height:"auto"; */
+    max-width:  700px;
+    /* text-wrap:nowrap; */
+    overflow: hidden;
+    
+  }
+  .image-info{
+    display: flex;
+    justify-content: center;
+  }
+
+  /* @media screen and (max-width: 400px) {
+    .image-2-icon-blog{
+        height:"auto";
+        max-width:  360px;
+        text-wrap: wrap;
+      }
+  } */
